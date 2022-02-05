@@ -1,5 +1,33 @@
+# BACKEND
+# env files
 .venv
+.env
 
+# cache
 __pycache__
 
+# database
 db.sqlite3
+
+# FRONTEND
+# dependencies
+node_modules
+*.pnp
+*.pnp.js
+
+# testing
+coverage
+
+# production
+build
+
+# misc
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
