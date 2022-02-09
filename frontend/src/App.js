@@ -12,15 +12,19 @@ class App extends React.Component {
   };
 
   componentDidMount() {
-    axios.get("http://127.0.0.1:8000/api/authors/").then(response => {
-      this.setState({"authors": response.data})
-      console.log(response.data)
-    }).catch(error => console.log(error))
+    const authors = [
+      {
+        "first_name": "Ruslan",
+        "last_name": "Korneev",
+        "birthday_year": 2001,
+      }
+    ];
+    this.setState({"authors": authors});
   };
 
   render() {
     return (
-      <div>
+      <div className='authors'>
         <AuthorList authors={this.state.authors}/>
       </div>
     );
